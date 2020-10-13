@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7px;    
+    
+}
+
+.menu {
+    background-color: #f3fbec;
+    /*posição fixa do menu. altera eixo z*/
+    position: fixed;
+    /*ajustar largura*/
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu a {
+    /*controlar padding*/
+    display: block;
+    /*aumentar área de clique*/
+    padding: 10px 20px;
+    /*raio da bordar*/
+    border-radius: 10px;
+}
+
+.menu a:active,
+.menu a:hover {
+    /*inversão de cor e trasicao de retorno*/
+    background-color: midnightblue;
+    color: #f3fbec;
+    transition: background-color 0.5s, color 1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu .container{
+    text-decoration: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.sobre h2,
+.portifolio h2,
+.contato h2 {
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.sobre,
+.portifolio,
+.contato {
+    padding: 1em;
+    font-size: 1em;
+}
+
+.contato .icons {
+    text-align: center;
+    text-decoration: none;
+}
+
+.contato a {
+    color: blueviolet;
+    font-size: 5em;
+    padding: 20px;
+    transition: text-shadow 200ms;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 5px 5px 5px rgba(25, 25, 112, 0.8);
+}
+
+footer {
+    text-align: center;
+}
